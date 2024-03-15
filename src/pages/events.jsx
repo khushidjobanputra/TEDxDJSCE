@@ -1,7 +1,7 @@
 import React from 'react'
-import { NavbarWithMegaMenu } from '../components/Navbar'
-import Carousel from '../components/Carousel'
-import {AccordionComponent} from '../components/Accordion'
+import { NavbarWithMegaMenu } from '../Components/Events/Navbar'
+import Carousel from '../Components/Events/Carousel'
+import {AccordionComponent} from '../Components/Events/Accordion'
 import { motion } from "framer-motion";
 const Events = () => {
   return (

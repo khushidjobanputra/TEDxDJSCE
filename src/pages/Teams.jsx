@@ -1,12 +1,9 @@
 import React from 'react';
-import Card from './Card';
-
-import "./Teams.css";
-import backgroundImage from "./X.jpg";
+import Card from '../Components/Teams/Card';
+import backgroundImage from '../Components/Teams/X.jpg'
 
 export default function Teams() {
   return (
-    <div id="team">
     <div className="flex flex-wrap justify-center pt-[10%]">
         <Card/>
         <Card/>
@@ -16,7 +13,6 @@ export default function Teams() {
         <Card/>
         <Card/>
         <Card/>
-    </div>
     </div>
   )
 }
