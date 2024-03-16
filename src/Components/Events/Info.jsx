@@ -52,11 +52,11 @@ export function PopoverWithImage() {
       {infoData.map((info, index) => (
         <Popover key={index}>
           <PopoverHandler>
-            <Button className="my-3 bg-white text-black w-[70vh]">
+            <Button className="my-3 bg-white text-black md:w-[70vh] w-full">
               {info.mainButton}
             </Button>
           </PopoverHandler>
-          <PopoverContent className="z-[999] grid w-[28rem] grid-cols-2 p-0">
+          <PopoverContent className="z-[999] grid md:w-[28rem] w-[24rem] grid-cols-2 p-0">
 
             <div className="p-4">
               <Typography color="blue-gray" className="mb-2 text-md font-bold text-red-500">

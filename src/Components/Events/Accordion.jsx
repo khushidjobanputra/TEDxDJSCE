@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Accordion,
   AccordionHeader,
   AccordionBody,
+  Button
 } from "@material-tailwind/react";
 
 const accordionData = [
@@ -26,13 +27,22 @@ const accordionData = [
   },
 ];
 
-export function AccordionComponent() {
-  const [open, setOpen] = React.useState(1);
+const AccordionComponent = () => {
+  const [open, setOpen] = useState(1);
+  const [expanded, setExpanded] = useState({});
 
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
+  const toggleExpand = (id) => {
+    setExpanded((prevExpanded) => ({
+      ...prevExpanded,
+      [id]: !prevExpanded[id],
+    }));
+  };
+
+
   return (
-    <div className="mx-20 mt-12 pb-10">
+    <div className="md:mx-20 mx-4 mt-12 pb-10">
       {accordionData.map((item) => (
         <Accordion
           key={item.id}
@@ -47,11 +57,25 @@ export function AccordionComponent() {
           >
             {item.header}
           </AccordionHeader>
-          <AccordionBody className="pt-0 font-normal text-white text-xl">
-            {item.body}
+          <AccordionBody className="pt-0 font-normal text-white text-xl md:text-lg w-full md:w-full">
+            <p className={`${expanded[item.id] ? "" : "line-clamp-4"}`}>
+              {item.body}
+            </p>
+            {!expanded[item.id] && (
+              <Button
+                color="red"
+                onClick={() => toggleExpand(item.id)}
+                ripple="light"
+                size="sm"
+              >
+                Read More
+              </Button>
+            )}
           </AccordionBody>
         </Accordion>
       ))}
     </div>
   );
-}
+};
+
+export default AccordionComponent;

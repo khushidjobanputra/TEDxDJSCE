@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router';
 import Events from './pages/events';
 import Collaborate from './pages/Collaborate';
 import { NavbarWithMegaMenu } from './Components/Events/Navbar';
+import { FooterWithSocialLinks } from './Components/Events/Footer';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='/about' element={<About />}/>
         <Route path='/collaborate' element={<Collaborate />}/>
       </Routes>
+      <FooterWithSocialLinks/>
     </div>
   );
 };
