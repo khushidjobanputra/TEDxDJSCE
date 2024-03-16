@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Navbar,
   Collapse,
@@ -161,23 +162,46 @@ function NavList() {
         <div className=" flex flex-row gap-10">
       <Typography
         as="a"
-        href="#"
         variant="small"
         color="blue-gray"
         className="font-medium"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4 text-white">Home</ListItem>
+        <ListItem className="flex items-center gap-2 py-2 pr-4 text-white"><Link to="/about">Home</Link></ListItem>
       </Typography>
-      <NavListMenu />
+      {/* <NavListMenu /> */}
       <Typography
         as="a"
-        href="#"
+      
         variant="small"
         color="blue-gray"
         className="font-medium"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4 text-white ">
-          Contact Us
+          <Link to="/collaborate">Collaborate</Link> 
+        </ListItem>
+      </Typography>
+
+      <Typography
+        as="a"
+       
+        variant="small"
+        color="blue-gray"
+        className="font-medium"
+      >
+        <ListItem className="flex items-center gap-2 py-2 pr-4 text-white ">
+          <Link to="/events">Events</Link>
+        </ListItem>
+      </Typography>
+
+      <Typography
+        as="a"
+       
+        variant="small"
+        color="blue-gray"
+        className="font-medium"
+      >
+        <ListItem className="flex items-center gap-2 py-2 pr-4 text-white ">
+          <Link to="/team">Teams</Link>
         </ListItem>
       </Typography>
       </div>

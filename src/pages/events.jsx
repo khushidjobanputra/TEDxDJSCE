@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Events = () => {
   return (
     <div>
-       <NavbarWithMegaMenu/>
+       {/* <NavbarWithMegaMenu/> */}
        <motion.div 
        initial={{ x: "-100vw" }} 
        animate={{ x: 0 }} 

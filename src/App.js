@@ -3,12 +3,14 @@ import backgroundImage from "../src/assets/tedx_bg.jpg" // Import your backgroun
 import Teams from './pages/Teams';
 import About from './pages/About';
 import { Route, Routes } from 'react-router';
-import Events from './pages/Events';
+import Events from './pages/events';
 import Collaborate from './pages/Collaborate';
+import { NavbarWithMegaMenu } from './Components/Events/Navbar';
 
 const App = () => {
   return (
     <div className='bg-black bg-cover bg-center min-h-screen -ml-1' style={{ backgroundImage: `url(${backgroundImage})` }}>
+      <NavbarWithMegaMenu/>
       <Routes>
         <Route path='/events' element={<Events />}/>
         <Route path='/team' element={<Teams />}/>

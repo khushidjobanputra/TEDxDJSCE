@@ -14,3 +14,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.home__Container {
+  background-image: url("../src/assets/tedx_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  /* margin-top: 80px; */
+  /* color: var(--white__color); */
+}
+.home__bgLayer {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+}

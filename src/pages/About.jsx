@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className="w-full h-[100vh] bg-red-300 bg-[url('/src/assets/AboutImage.jpg')] bg-no-repeat bg-cover bg-center flex items-center">
+    <div className="w-full h-screen bg-red-300 bg-[url('/src/assets/AboutImage.jpg')] bg-no-repeat bg-cover bg-center flex items-center">
       <div className="content w-[40vw]  md:ml-20 p-5 flex flex-col justify-between">
         <div className="heading">
           <h1 className=" inline-block uppercase text-[#FF0000] font-semibold font-['Outfit'] text-[3vw]">
