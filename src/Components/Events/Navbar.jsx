@@ -180,7 +180,6 @@ function NavList() {
       {/* <NavListMenu /> */}
       <Typography
         as="a"
-      
         variant="small"
         color="blue-gray"
         className="font-medium"
