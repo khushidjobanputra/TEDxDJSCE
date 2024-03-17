@@ -26,15 +26,15 @@ function About() {
             type: "cubic-bezier(0.76, 0, 0.24, 1)",
             duration: 0.5,
           }}
-          className="text-['Outfit'] text-[#fff] font-semibold text-[5vw] text-center"
+          className="text-['Outfit'] text-[#fff] font-semibold text-[4vw] text-center"
         >
-          About Us
+          ABOUT US
         </motion.h1>
         {/* 1st div */}
         <div
           id="one"
           // bg-yellow-500
-          className="w-full h-[80vh]  flex items-center justify-between md:p-10"
+          className="w-full h-screen flex justify-between md:p-10"
         >
           {/* bg-purple-600 */}
           <motion.div
@@ -47,7 +47,7 @@ function About() {
             id="left1"
             className="w-[43%] "
           >
-            <img src={image1} alt="one" />
+            <img className=" rounded-xl" src={image1} alt="one" />
           </motion.div>
           {/* bg-black */}
           <div id="right1" className="w-[48%]  h-full md:px-5">
@@ -59,7 +59,7 @@ function About() {
                 initial={{ opacity: 0, filter: "blur(10px)" }}
                 animate={{ opacity: 1, filter: "blur(0px)" }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="text-[#fff] font-['Inter'] text-[1.5vw]"
+                className="text-[#fff] font-['Inter'] text-[1.4vw]"
               >
                 In the spirit of ideas worth spreading, TED has created a
                 program called TEDx. TEDx is a program of local, self-organized

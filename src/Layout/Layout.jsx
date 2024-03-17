@@ -6,7 +6,7 @@ import { FooterWithSocialLinks } from '../Components/Footer';
 
 function Layout() {
     return (
-        <div className=' bg-black bg-cover bg-center min-h-screen -ml-1' style={{ backgroundImage: `url(${backgroundImage})` }}>
+        <div className=' bg-black bg-cover bg-center min-h-screen' style={{ backgroundImage: `url(${backgroundImage})` }}>
         <NavbarWithMegaMenu/>
         <Outlet/>
         <FooterWithSocialLinks/>
