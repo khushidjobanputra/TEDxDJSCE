@@ -5,9 +5,9 @@ import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Layout from './Layout/Layout.jsx'
 import About from './Pages/About.jsx'
-import Collaborate from './Pages/Collaborate.jsx'
-import Events from './Pages/events.jsx'
-import Teams from './Pages/Teams.jsx'
+import Collaborate from './pages/Collaborate.jsx'
+import Events from './pages/events.jsx'
+import Teams from './pages/Teams.jsx'
 import Home from './Home/Home.jsx'
 
 const router = createBrowserRouter([
