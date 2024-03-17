@@ -2,9 +2,10 @@ import React from "react";
 import image1 from "../assets/About-tedx-image-1.webp";
 import image2 from "../assets/ted-about-2.webp";
 import { motion } from "framer-motion";
+
 function About() {
   return (
-    <div className="w-full min-h-screen  bg-[url('/src/assets/AboutImage.jpg')] bg-no-repeat bg-cover bg-center flex items-center p-5">
+    <div className="w-full min-h-screen flex items-center p-5">
       {/* bg-red-800 */}
       <div className="w-[100%] min-h-[90vh] ">
         <motion.h1

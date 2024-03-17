@@ -14,7 +14,7 @@ const Events = () => {
         EVENT <span className=' text-white'>x</span>
        </motion.div>
          <Carousel/>
-         <AccordionComponent/>
+         <AccordionComponent/> 
     </div>
   )
 }

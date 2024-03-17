@@ -166,7 +166,16 @@ function NavList() {
         color="blue-gray"
         className="font-medium"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4 text-white"><Link to="/about">Home</Link></ListItem>
+        <ListItem className="flex items-center gap-2 py-2 pr-4 text-white"><Link to="/">Home</Link></ListItem>
+      </Typography>
+
+      <Typography
+        as="a"
+        variant="small"
+        color="blue-gray"
+        className="font-medium"
+      >
+        <ListItem className="flex items-center gap-2 py-2 pr-4 text-white"><Link to="/about">About</Link></ListItem>
       </Typography>
       {/* <NavListMenu /> */}
       <Typography
@@ -181,7 +190,7 @@ function NavList() {
         </ListItem>
       </Typography>
 
-      <Typography
+      {/* <Typography
         as="a"
        
         variant="small"
@@ -191,9 +200,9 @@ function NavList() {
         <ListItem className="flex items-center gap-2 py-2 pr-4 text-white ">
           <Link to="/events">Events</Link>
         </ListItem>
-      </Typography>
+      </Typography> */}
 
-      <Typography
+      {/* <Typography
         as="a"
        
         variant="small"
@@ -203,7 +212,7 @@ function NavList() {
         <ListItem className="flex items-center gap-2 py-2 pr-4 text-white ">
           <Link to="/team">Teams</Link>
         </ListItem>
-      </Typography>
+      </Typography> */}
       </div>
     </List>
   );
@@ -224,7 +233,7 @@ export function NavbarWithMegaMenu() {
       <div className="flex items-center justify-between text-red-500 font-bold">
         <Typography
           as="a"
-          href="#"
+          href="/"
           variant="h6"
           className="mr-4 cursor-pointer py-1.5 lg:ml-2 text-2xl"
         >
