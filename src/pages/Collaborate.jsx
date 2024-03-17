@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {Example} from "../Components/Events/Video"
 import { PopoverWithImage } from '../Components/Events/Info';
 const Collaborate = () => {
+
+  useEffect(() => {
+    document.title = "Collaborate - TEDxDJSCE"; // Set the title of the page
+  }, []);
+
   return (
     <div>
       <div className='home__Container'>

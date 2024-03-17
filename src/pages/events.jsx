@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Carousel from '../Components/Events/Carousel'
 import AccordionComponent from '../Components/Events/Accordion'
 import { motion } from "framer-motion";
 const Events = () => {
+
+  useEffect(() => {
+    document.title = "Events - TEDxDJSCE"; // Set the title of the page
+  }, []);
+
   return (
     <div>
        {/* <NavbarWithMegaMenu/> */}

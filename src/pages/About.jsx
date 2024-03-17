@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import image1 from "../assets/About-tedx-image-1.webp";
 import image2 from "../assets/ted-about-2.webp";
 import { motion } from "framer-motion";
 
 function About() {
+  
+  useEffect(() => {
+    document.title = "About - TEDxDJSCE"; // Set the title of the page
+  }, []);
+
   return (
     <div className="w-full min-h-screen  bg-[url('/src/assets/AboutImage.jpg')] bg-no-repeat bg-cover bg-center flex items-center p-5">
       {/* bg-red-800 */}

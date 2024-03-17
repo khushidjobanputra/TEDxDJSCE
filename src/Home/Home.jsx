@@ -5,6 +5,11 @@ import { Reflector, Text, useTexture, useGLTF } from '@react-three/drei'
 
 
 export default function Home() {
+
+  useEffect(() => {
+    document.title = "Home - TEDxDJSCE"; // Set the title of the page
+  }, []);
+
   return (
     <div className='mt-17 h-[550px]'>
     <Canvas concurrent gl={{ alpha: false }} pixelRatio={[1, 1.5]} camera={{ position: [0, 3, 100], fov: 15 }}>
