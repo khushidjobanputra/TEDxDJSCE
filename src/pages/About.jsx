@@ -4,7 +4,6 @@ import image2 from "../assets/ted-about-2.webp";
 import { motion } from "framer-motion";
 
 function About() {
-  
   useEffect(() => {
     document.title = "About - TEDxDJSCE"; // Set the title of the page
   }, []);
@@ -12,7 +11,7 @@ function About() {
   return (
     <div className="w-full min-h-screen  bg-[url('/src/assets/AboutImage.jpg')] bg-no-repeat bg-cover bg-center flex items-center p-5">
       {/* bg-red-800 */}
-      <div className="w-[100%] min-h-[90vh] ">
+      <div className="w-[100%] min-h-[90vh]">
         <motion.h1
           initial={{
             y: "-100vh",
@@ -34,7 +33,7 @@ function About() {
         <div
           id="one"
           // bg-yellow-500
-          className="w-full h-screen flex justify-between md:p-10"
+          className="w-full flex flex-col items-center md:flex-row md:justify-between py-2 md:p-10"
         >
           {/* bg-purple-600 */}
           <motion.div
@@ -45,12 +44,15 @@ function About() {
               duration: 0.8,
             }}
             id="left1"
-            className="w-[43%] "
+            className="md:w-[43%] w-full px-[10vw] md:px-1 "
           >
             <img className=" rounded-xl" src={image1} alt="one" />
           </motion.div>
           {/* bg-black */}
-          <div id="right1" className="w-[48%]  h-full md:px-5">
+          <div
+            id="right1"
+            className="md:w-[48%] w-full h-full px-[8vw] mt-5 md:mt-[0px] md:px-5"
+          >
             <h1 className="font-semibold text-center font-['Outfit'] text-[#fff] uppercase text-[3vw]">
               Ted<span className="text-red-900 normal-case">x</span>
             </h1>
@@ -80,19 +82,36 @@ function About() {
         <div
           id="one"
           // bg-yellow-500
-          className="w-full h-[80vh]  flex items-center justify-between md:p-10"
+          className="w-full flex flex-col items-center md:flex-row md:justify-between py-2 md:p-10 mt-10 md:mt-1"
         >
           {/* bg-purple-600 */}
-          <div id="left1" className="w-[43%] order-2">
-            <img src={image2} alt="one" />
-          </div>
+          <motion.div
+            initial={{ x: "-100vw", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{
+              type: "cubic-bezier(0.83, 0, 0.17, 1)",
+              duration: 0.8,
+            }}
+            id="left1"
+            className="md:w-[43%] w-full px-[10vw] md:px-1 md:order-2 "
+          >
+            <img className=" rounded-xl" src={image1} alt="one" />
+          </motion.div>
           {/* bg-black */}
-          <div id="right1" className="w-[48%]  h-full md:px-5">
+          <div
+            id="right1"
+            className="md:w-[48%] w-full h-full px-[8vw] mt-5 md:mt-[0px] md:px-5"
+          >
             <h1 className="font-semibold text-center font-['Outfit'] text-[#fff] uppercase text-[3vw]">
-              Ted<span className="text-red-900 normal-case">x</span>Djsce
+              Ted<span className="text-red-900 normal-case">x</span>
             </h1>
             <div className="w-full">
-              <p className="text-[#fff] font-['Inter'] text-[1.5vw]">
+              <motion.p
+                initial={{ opacity: 0, filter: "blur(10px)" }}
+                animate={{ opacity: 1, filter: "blur(0px)" }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="text-[#fff] font-['Inter'] text-[1.4vw]"
+              >
                 In the spirit of ideas worth spreading, TED has created a
                 program called TEDx. TEDx is a program of local, self-organized
                 events that bring people together to share a TED-like
@@ -103,7 +122,7 @@ function About() {
                 audience. The TED Conference provides general guidance for the
                 TEDx program, but individual TEDx events, including ours, are
                 self-organized.
-              </p>
+              </motion.p>
             </div>
           </div>
         </div>
