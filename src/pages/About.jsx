@@ -23,7 +23,7 @@ function About() {
           }}
           transition={{
             type: "cubic-bezier(0.76, 0, 0.24, 1)",
-            duration: 0.5,
+            duration: 0.4,
           }}
           className="text-['Outfit'] text-[#fff] font-semibold text-[7vw] md:text-[4vw] text-center"
         >
@@ -42,6 +42,7 @@ function About() {
             transition={{
               type: "cubic-bezier(0.83, 0, 0.17, 1)",
               duration: 0.8,
+              delay: 0.1,
             }}
             id="left1"
             className="md:w-[43%] md:h-full h-[25vh]  w-[75vw] px-[10vw] md:px-1 "
@@ -51,17 +52,22 @@ function About() {
           {/* bg-black */}
           <div
             id="right1"
-            className="md:w-[48%] w-full h-full px-[8vw] mt-5 md:mt-[0px] md:px-5"
+            className="md:w-[48%] w-full h-full px-[6vw] mt-5 md:mt-[0px] md:px-5"
           >
-            <h1 className="font-semibold text-center font-['Outfit'] text-[#fff] uppercase text-[5.5vw] md:text-[3vw]">
+            <motion.h1
+              initial={{ opacity: 0, filter: "blur(20px)" }}
+              animate={{ opacity: 1, filter: "blur(0px)" }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="font-semibold text-center font-['Outfit'] text-[#fff] uppercase text-[5.5vw] md:text-[3vw]"
+            >
               Ted<span className="text-red-900 normal-case">x</span>
-            </h1>
+            </motion.h1>
             <div className="w-full">
               <motion.p
                 initial={{ opacity: 0, filter: "blur(10px)" }}
                 animate={{ opacity: 1, filter: "blur(0px)" }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-                className="text-[#fff] font-['Inter'] text-[3vw] md:text-[1.4vw]"
+                transition={{ duration: 0.8, delay: 0.3 }}
+                className="text-[#fff] font-['Inter'] text-[3.8vw] md:text-[1.4vw]"
               >
                 In the spirit of ideas worth spreading, TED has created a
                 program called TEDx. TEDx is a program of local, self-organized
@@ -86,11 +92,12 @@ function About() {
         >
           {/* bg-purple-600 */}
           <motion.div
-            initial={{ x: "-100vw", opacity: 0 }}
+            initial={{ x: "100vw", opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{
               type: "cubic-bezier(0.83, 0, 0.17, 1)",
               duration: 0.8,
+              delay: 0.1,
             }}
             id="left1"
             className="md:w-[43%] md:h-full h-[25vh]  w-[75vw] px-[10vw] md:px-1 md:order-2 "
@@ -100,17 +107,22 @@ function About() {
           {/* bg-black */}
           <div
             id="right1"
-            className="md:w-[48%] w-full h-full px-[8vw] mt-5 md:mt-[0px] md:px-5"
+            className="md:w-[48%] w-full h-full px-[6vw] mt-5 md:mt-[0px] md:px-5"
           >
-            <h1 className="font-semibold text-center font-['Outfit'] text-[#fff] uppercase text-[5.5vw] md:text-[3vw]">
+            <motion.h1
+              initial={{ opacity: 0, filter: "blur(20px)" }}
+              animate={{ opacity: 1, filter: "blur(0px)" }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="font-semibold text-center font-['Outfit'] text-[#fff] uppercase text-[5.5vw] md:text-[3vw]"
+            >
               Ted<span className="text-red-900 normal-case">x</span>
-            </h1>
+            </motion.h1>
             <div className="w-full">
               <motion.p
                 initial={{ opacity: 0, filter: "blur(10px)" }}
                 animate={{ opacity: 1, filter: "blur(0px)" }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-                className="text-[#fff] font-['Inter'] text-[3vw] md:text-[1.4vw]"
+                transition={{ duration: 0.8, delay: 0.3 }}
+                className="text-[#fff] font-['Inter'] text-[3.8vw] md:text-[1.4vw]"
               >
                 In the spirit of ideas worth spreading, TED has created a
                 program called TEDx. TEDx is a program of local, self-organized
