@@ -23,14 +23,15 @@ function About() {
             className=" w-[59%] font-medium text-[1.7vw] text-[#fff] font-['Inter']"
           >
             <p>
-              TEDxDJSCE is an independently organized TED event, consisting of a
-              series of short, carefully curated talks that cover a wide range
-              of topics - from science and technology to pressing global issues.
-              Our event aims to give inspired thinkers a platform to put forth
-              their ideas and expose students to new, emerging perspectives on a
-              diverse range of topics that spark conversation and communication.
-              We strive to create an inclusive space that amplifies ideas from
-              various disciplines, backgrounds, and experiences.
+            In the spirit of ideas worth spreading, TED has created a program
+            called TEDx. TEDx is a program of local, self-organized events that
+            bring people together to share a TED-like experience. Our event is
+            called TEDxDJSCE, where x = independently organized TED event. At
+            our TEDxDJSCE event, TED Talks and interaction with professionals
+            from different fields will combine to spark deep discussion and
+            connection with the audience. The TED Conference provides general
+            guidance for the TEDx program, but individual TEDx events, including
+            ours, are self-organized.
             </p>
           </div>
           <div
@@ -38,13 +39,14 @@ function About() {
             className=" w-[59%] self-end font-medium text-[#fff] font-['Inter'] text-[1.7vw] md:mt-5"
           >
             <p>
-              By doing so, we aim to catalyze conversations that lead to
-              innovative solutions and a deeper understanding of the world
-              around us. TEDxDJSCE is more than just a series of talks; it's an
-              immersive experience designed to ignite your imagination and fuel
-              your passion for learning. So if you’re someone who believes in
-              the transformative power of ideas, come be a part of our community
-              where creativity thrives and curiosity comes alive.
+            TEDxDJSCE is an independently organized TED event, consisting of a
+              series of short, carefully curated talks that cover a wide range
+              of topics - from science and technology to pressing global issues.
+              Our event aims to give inspired thinkers a platform to put forth
+              their ideas and expose students to new, emerging perspectives on a
+              diverse range of topics that spark conversation and communication.
+              We strive to create an inclusive space that amplifies ideas from
+              various disciplines, backgrounds, and experiences.
             </p>
           </div>
         </div>
