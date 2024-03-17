@@ -8,7 +8,7 @@ const Collaborate = () => {
   }, []);
 
   return (
-    <div>
+    <div className=''>
       <div className='home__Container'>
         <div className='home__bgLayer'>
           {/* <NavbarWithMegaMenu/> */}
@@ -16,7 +16,7 @@ const Collaborate = () => {
             <div className='md:w-[60vh] w-[30vh]'>
               <p className='text-white text-xl md:text-4xl text-center my-10 font-bold py-2'>WHAT MAKES US A <span className=' text-red-500'> VALUABLE INVESTMENT ?</span></p>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-20 md:mx-20 mx-4 mt-10'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-20 md:mx-20 mx-4 mt-2'>
             
              <div>
                 <Example/>
