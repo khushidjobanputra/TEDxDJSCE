@@ -25,7 +25,7 @@ function About() {
             type: "cubic-bezier(0.76, 0, 0.24, 1)",
             duration: 0.5,
           }}
-          className="text-['Outfit'] text-[#fff] font-semibold text-[4vw] text-center"
+          className="text-['Outfit'] text-[#fff] font-semibold text-[7vw] md:text-[4vw] text-center"
         >
           ABOUT US
         </motion.h1>
@@ -33,7 +33,7 @@ function About() {
         <div
           id="one"
           // bg-yellow-500
-          className="w-full flex flex-col items-center md:flex-row md:justify-between py-2 md:p-10"
+          className="w-full flex flex-col items-center md:flex-row md:justify-between py-2 md:p-10 mt-[4vw] md:mt-1"
         >
           {/* bg-purple-600 */}
           <motion.div
@@ -44,16 +44,16 @@ function About() {
               duration: 0.8,
             }}
             id="left1"
-            className="md:w-[43%] w-full px-[10vw] md:px-1 "
+            className="md:w-[43%] md:h-full h-[25vh]  w-[75vw] px-[10vw] md:px-1 "
           >
-            <img className=" rounded-xl" src={image1} alt="one" />
+            <img className=" rounded-xl w-full h-full" src={image1} alt="one" />
           </motion.div>
           {/* bg-black */}
           <div
             id="right1"
             className="md:w-[48%] w-full h-full px-[8vw] mt-5 md:mt-[0px] md:px-5"
           >
-            <h1 className="font-semibold text-center font-['Outfit'] text-[#fff] uppercase text-[3vw]">
+            <h1 className="font-semibold text-center font-['Outfit'] text-[#fff] uppercase text-[5.5vw] md:text-[3vw]">
               Ted<span className="text-red-900 normal-case">x</span>
             </h1>
             <div className="w-full">
@@ -61,7 +61,7 @@ function About() {
                 initial={{ opacity: 0, filter: "blur(10px)" }}
                 animate={{ opacity: 1, filter: "blur(0px)" }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="text-[#fff] font-['Inter'] text-[1.4vw]"
+                className="text-[#fff] font-['Inter'] text-[3vw] md:text-[1.4vw]"
               >
                 In the spirit of ideas worth spreading, TED has created a
                 program called TEDx. TEDx is a program of local, self-organized
@@ -82,7 +82,7 @@ function About() {
         <div
           id="one"
           // bg-yellow-500
-          className="w-full flex flex-col items-center md:flex-row md:justify-between py-2 md:p-10 mt-10 md:mt-1"
+          className="w-full flex flex-col items-center md:flex-row md:justify-between py-2 md:p-10 mt-[4vw] md:mt-1"
         >
           {/* bg-purple-600 */}
           <motion.div
@@ -93,16 +93,16 @@ function About() {
               duration: 0.8,
             }}
             id="left1"
-            className="md:w-[43%] w-full px-[10vw] md:px-1 md:order-2 "
+            className="md:w-[43%] md:h-full h-[25vh]  w-[75vw] px-[10vw] md:px-1 md:order-2 "
           >
-            <img className=" rounded-xl" src={image1} alt="one" />
+            <img className=" rounded-xl w-full h-full" src={image1} alt="one" />
           </motion.div>
           {/* bg-black */}
           <div
             id="right1"
             className="md:w-[48%] w-full h-full px-[8vw] mt-5 md:mt-[0px] md:px-5"
           >
-            <h1 className="font-semibold text-center font-['Outfit'] text-[#fff] uppercase text-[3vw]">
+            <h1 className="font-semibold text-center font-['Outfit'] text-[#fff] uppercase text-[5.5vw] md:text-[3vw]">
               Ted<span className="text-red-900 normal-case">x</span>
             </h1>
             <div className="w-full">
@@ -110,7 +110,7 @@ function About() {
                 initial={{ opacity: 0, filter: "blur(10px)" }}
                 animate={{ opacity: 1, filter: "blur(0px)" }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="text-[#fff] font-['Inter'] text-[1.4vw]"
+                className="text-[#fff] font-['Inter'] text-[3vw] md:text-[1.4vw]"
               >
                 In the spirit of ideas worth spreading, TED has created a
                 program called TEDx. TEDx is a program of local, self-organized
