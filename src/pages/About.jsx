@@ -69,7 +69,7 @@ function About() {
                 transition={{ duration: 0.8, delay: 0.3 }}
                 className="text-[#fff] font-['Inter'] text-[4vw] md:text-[1.4vw]"
               >
-                TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. TEDx events are organized independently, under a free license granted by TED, the nonprofit organization devoted to spreading ideas in the form of short, powerful talks. TEDx events feature live speakers and TED Talk videos, covering a wide range of topics including technology, entertainment, design, science, and global issues. The "x" in TEDx stands for independently organized TED event. These events aim to spark deep discussion and connection within communities.
+                TEDx is a grassroots initiative, created in the spirit of TED’s overall mission to research and discover “ideas worth spreading.” TEDx brings the spirit of TED to local communities around the globe through TEDx events. These events are organized by passionate individuals who seek to uncover new ideas and to share the latest research in their local areas that spark conversations in their communities. TEDx events include live speakers and recorded TED Talks, and are organized independently under a free license granted by TED.
               </motion.p>
             </div>
           </div>
