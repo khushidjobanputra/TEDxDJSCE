@@ -6,7 +6,7 @@ import About from '../Pages/About'
 
 export default function Home() {
   return (
-    <div className='mt-17 h-[550px]'>
+    <div className='mt-17 h-screen'>
     <Canvas concurrent gl={{ alpha: false }} pixelRatio={[1, 1.5]} camera={{ position: [0, 3, 100], fov: 15 }}>
       <color attach="background" args={['black']} />
       <fog attach="fog" args={['black', 15, 20]} />

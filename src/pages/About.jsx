@@ -67,18 +67,9 @@ function About() {
                 initial={{ opacity: 0, filter: "blur(10px)" }}
                 animate={{ opacity: 1, filter: "blur(0px)" }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                className="text-[#fff] font-['Inter'] text-[3.8vw] md:text-[1.4vw]"
+                className="text-[#fff] font-['Inter'] text-[4vw] md:text-[1.4vw]"
               >
-                In the spirit of ideas worth spreading, TED has created a
-                program called TEDx. TEDx is a program of local, self-organized
-                events that bring people together to share a TED-like
-                experience. Our event is called TEDxDJSCE, where x =
-                independently organized TED event. At our TEDxDJSCE event, TED
-                Talks and interaction with professionals from different fields
-                will combine to spark deep discussion and connection with the
-                audience. The TED Conference provides general guidance for the
-                TEDx program, but individual TEDx events, including ours, are
-                self-organized.
+                TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. TEDx events are organized independently, under a free license granted by TED, the nonprofit organization devoted to spreading ideas in the form of short, powerful talks. TEDx events feature live speakers and TED Talk videos, covering a wide range of topics including technology, entertainment, design, science, and global issues. The "x" in TEDx stands for independently organized TED event. These events aim to spark deep discussion and connection within communities.
               </motion.p>
             </div>
           </div>
@@ -102,7 +93,7 @@ function About() {
             id="left1"
             className="md:w-[43%] md:h-full h-[25vh]  w-[75vw] px-[10vw] md:px-1 md:order-2 "
           >
-            <img className=" rounded-xl w-full h-full" src={image1} alt="one" />
+            <img className=" rounded-xl w-full h-full" src={image2} alt="one" />
           </motion.div>
           {/* bg-black */}
           <div
@@ -115,25 +106,26 @@ function About() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="font-semibold text-center font-['Outfit'] text-[#fff] uppercase text-[5.5vw] md:text-[3vw]"
             >
-              Ted<span className="text-red-900 normal-case">x</span>
+              Ted<span className="text-red-900 normal-case">x</span>DJSCE
             </motion.h1>
             <div className="w-full">
               <motion.p
                 initial={{ opacity: 0, filter: "blur(10px)" }}
                 animate={{ opacity: 1, filter: "blur(0px)" }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                className="text-[#fff] font-['Inter'] text-[3.8vw] md:text-[1.4vw]"
+                className="text-[#fff] font-['Inter'] text-[4vw] md:text-[1.4vw]"
               >
-                In the spirit of ideas worth spreading, TED has created a
-                program called TEDx. TEDx is a program of local, self-organized
-                events that bring people together to share a TED-like
-                experience. Our event is called TEDxDJSCE, where x =
-                independently organized TED event. At our TEDxDJSCE event, TED
-                Talks and interaction with professionals from different fields
-                will combine to spark deep discussion and connection with the
-                audience. The TED Conference provides general guidance for the
-                TEDx program, but individual TEDx events, including ours, are
-                self-organized.
+                TEDxDJSCE is an independently organized TED event, consisting of a
+                series of short, carefully curated talks that cover a wide range
+                of topics - from science and technology to pressing global issues.
+                Our event aims to give inspired thinkers a platform to put forth
+                their ideas and expose students to new, emerging perspectives on a
+                diverse range of topics that spark conversation and communication.
+                TEDxDJSCE is more than just a series of talks; it's an
+                immersive experience designed to ignite your imagination and fuel
+                your passion for learning. So if you’re someone who believes in
+                the transformative power of ideas, come be a part of our community
+                where creativity thrives and curiosity comes alive.
               </motion.p>
             </div>
           </div>

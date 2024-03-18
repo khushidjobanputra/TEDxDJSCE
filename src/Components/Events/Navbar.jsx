@@ -28,7 +28,7 @@ function NavList() {
         className="p-1 font-medium"
       >
         <a href="#" className="flex items-center hover:text-red-500 transition-colors">
-          <Link to="/collaborate">Collaborations</Link>
+          <Link to="/about">About us</Link>
         </a>
       </Typography>
       <Typography
@@ -38,7 +38,7 @@ function NavList() {
         className="p-1 font-medium"
       >
         <a href="#" className="flex items-center hover:text-red-500 transition-colors">
-          <Link to="/about">About us</Link>
+          <Link to="/collaborate">Collaborations</Link>
         </a>
       </Typography>
       {/* <Typography
@@ -74,7 +74,7 @@ export function NavbarSimple() {
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
-          href="#"
+          href="/"
           variant="h6"
           className="mr-4 cursor-pointer py-1.5 text-red-500 text-2xl font-bold"
         >
