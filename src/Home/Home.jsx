@@ -6,14 +6,14 @@ import About from '../pages/About'
 
 export default function Home() {
   return (
-    <div className='mt-17 h-screen'>
+    <div className='mt-17 sm:h-[25rem]'>
     <Canvas concurrent gl={{ alpha: false }} pixelRatio={[1, 1.5]} camera={{ position: [0, 3, 100], fov: 15 }}>
       <color attach="background" args={['black']} />
       <fog attach="fog" args={['black', 15, 20]} />
       <Suspense fallback={null}>
         <group position={[0, -3, 0]}>
           <Carla rotation={[0, Math.PI - 0.4, 0]} position={[-1.2, 1, 0.6]} scale={[0.26, 0.26, 0.26]} />
-          <VideoText position={[0, 2.8, -2]} />
+          <VideoText position={[0, 2.8, -2]}  />
           <Ground />
         </group>
         <ambientLight intensity={0.5} />
