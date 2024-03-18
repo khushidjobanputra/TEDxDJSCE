@@ -2,7 +2,7 @@ import * as THREE from 'three'
 import React, { Suspense, useEffect, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Reflector, Text, useTexture, useGLTF } from '@react-three/drei'
-import About from '../Pages/About'
+import About from '../pages/About'
 
 export default function Home() {
   return (
