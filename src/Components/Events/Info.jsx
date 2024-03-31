@@ -26,7 +26,7 @@ const infoData = [
       "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGRpZ2l0YWwlMjBtYXJrZXRpbmd8ZW58MHx8MHx8fDA%3D",
     buttonText: "DESIGN",
     mainButton: "YOUR ORGANIZATION’S NAME AND LOGO ON ALL EVENT BANNERS",
-    link: "https://www.linkedin.com/company/tedxdjsce/about/"
+    link: "https://www.linkedin.com/company/tedx-djsce/"
   },
   {
     title: "TEDxDJSCE",
