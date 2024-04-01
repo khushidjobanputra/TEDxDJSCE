@@ -1,0 +1,15 @@
+.parent {
+    position: relative;
+    overflow-y: auto; /* Enable vertical scrolling */
+    /* Set a fixed height for the container */
+  }
+  
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Cover the entire container */
+    height: 200px; /* Set the height of the image */
+    background: url('../assets/tedx_bg.jpg') center/cover; /* Set your image */
+    z-index: -1; /* Place the image behind other content */
+  }

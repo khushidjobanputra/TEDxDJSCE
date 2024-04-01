@@ -7,6 +7,7 @@ import Layout from './Layout/Layout.jsx'
 import About from './pages/About.jsx'
 import Collaborate from './pages/Collaborate.jsx'
 import Home from './Home/Home.jsx'
+import Teams from './pages/Teams.jsx'
 
 const router = createBrowserRouter([
   {
@@ -31,10 +32,10 @@ const router = createBrowserRouter([
       //   element:<Events/>
 
       // },
-      // {
-      //   path:"team",
-      //   element:<Teams/>
-      // }
+      {
+        path:"team",
+        element:<Teams/>
+      }
      
     ]
   }
