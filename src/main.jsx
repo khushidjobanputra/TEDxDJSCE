@@ -35,7 +35,6 @@ const router = createBrowserRouter([
       //   path:"team",
       //   element:<Teams/>
       // }
-     
     ]
   }
 ])
