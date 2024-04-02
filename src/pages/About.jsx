@@ -69,7 +69,15 @@ function About() {
                 transition={{ duration: 0.8, delay: 0.3 }}
                 className="text-[#fff] font-['Inter'] text-[4vw] md:text-[1.4vw]"
               >
-                TEDx is a grassroots initiative, created in the spirit of TED’s overall mission to research and discover “ideas worth spreading.” TEDx brings the spirit of TED to local communities around the globe through TEDx events. These events are organized by passionate individuals who seek to uncover new ideas and to share the latest research in their local areas that spark conversations in their communities. TEDx events include live speakers and recorded TED Talks, and are organized independently under a free license granted by TED.
+                TEDx is a grassroots initiative, created in the spirit of TED’s
+                overall mission to research and discover “ideas worth
+                spreading.” TEDx brings the spirit of TED to local communities
+                around the globe through TEDx events. These events are organized
+                by passionate individuals who seek to uncover new ideas and to
+                share the latest research in their local areas that spark
+                conversations in their communities. TEDx events include live
+                speakers and recorded TED Talks, and are organized independently
+                under a free license granted by TED.
               </motion.p>
             </div>
           </div>
@@ -104,9 +112,9 @@ function About() {
               initial={{ opacity: 0, filter: "blur(20px)" }}
               animate={{ opacity: 1, filter: "blur(0px)" }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="font-semibold text-center font-['Outfit'] text-[#fff] uppercase text-[5.5vw] md:text-[3vw]"
+              className="font-semibold text-center font-['Outfit'] text-red-900 uppercase text-[5.5vw] md:text-[3vw]"
             >
-              Ted<span className="text-red-900 normal-case">x</span>DJSCE
+              Ted<span className="text-red-900 normal-case">x</span><span className="text-[#fff]">DJSCE</span>
             </motion.h1>
             <div className="w-full">
               <motion.p
@@ -115,17 +123,18 @@ function About() {
                 transition={{ duration: 0.8, delay: 0.3 }}
                 className="text-[#fff] font-['Inter'] text-[4vw] md:text-[1.4vw]"
               >
-                TEDxDJSCE is an independently organized TED event, consisting of a
-                series of short, carefully curated talks that cover a wide range
-                of topics - from science and technology to pressing global issues.
-                Our event aims to give inspired thinkers a platform to put forth
-                their ideas and expose students to new, emerging perspectives on a
-                diverse range of topics that spark conversation and communication.
-                TEDxDJSCE is more than just a series of talks; it's an
-                immersive experience designed to ignite your imagination and fuel
-                your passion for learning. So if you’re someone who believes in
-                the transformative power of ideas, come be a part of our community
-                where creativity thrives and curiosity comes alive.
+                TEDxDJSCE is an independently organized TED event, consisting of
+                a series of short, carefully curated talks that cover a wide
+                range of topics - from science and technology to pressing global
+                issues. Our event aims to give inspired thinkers a platform to
+                put forth their ideas and expose students to new, emerging
+                perspectives on a diverse range of topics that spark
+                conversation and communication. TEDxDJSCE is more than just a
+                series of talks; it's an immersive experience designed to ignite
+                your imagination and fuel your passion for learning. So if
+                you’re someone who believes in the transformative power of
+                ideas, come be a part of our community where creativity thrives
+                and curiosity comes alive.
               </motion.p>
             </div>
           </div>
