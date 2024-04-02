@@ -4,6 +4,8 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Reflector, Text, useTexture, useGLTF } from "@react-three/drei";
 import bannerImg from "../assets/Home-images/bannerImg.webp";
 import Speaker from "../Components/Home/Speaker";
+import { info } from "../Components/Home/constant";
+import mobileBanner from "../assets/Home-images/mobileBanner.jpg";
 
 export default function Home() {
   return (
@@ -15,7 +17,8 @@ export default function Home() {
         //   backgroundImage: `url(${bannerImg})`,
         // }}
       >
-        <img className="w-full" src={bannerImg} alt="" />
+        <img className="w-full hidden lg:block" src={bannerImg} alt="" />
+        <img className="w-full block lg:hidden" src={mobileBanner} alt="" />
       </div>
 
       <div className="mt-17 h-screen">
@@ -44,13 +47,23 @@ export default function Home() {
           </Suspense>
         </Canvas>
       </div>
+
       {/* bg-yellow-400 */}
       <div id="speaker-section" className="">
         <h1 className="text-white text-5xl text-center">Our Speakers</h1>
         {/* bg-red-600 */}
         <div id="bottom-sec" className=" w-[100vw]">
-          <Speaker name="Raj Dayal" content="" />
-          <Speaker name="Raj Dayal" content="" />
+          {info.map((data, index) => (
+            <Speaker
+              key={index}
+              name={data.name}
+              content={data.content}
+              index={index}
+            />
+          ))}
+
+          {/* <Speaker name="Raj Dayal" content="" />
+          <Speaker name="Raj Dayal" content="" /> */}
         </div>
       </div>
     </>
