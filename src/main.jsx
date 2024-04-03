@@ -8,6 +8,7 @@ import About from './pages/About.jsx'
 import Collaborate from './pages/Collaborate.jsx'
 import Home from './Home/Home.jsx'
 import Teams from './pages/Teams.jsx'
+import Events from './pages/events.jsx'
 
 const router = createBrowserRouter([
   {
@@ -30,7 +31,6 @@ const router = createBrowserRouter([
       // {
       //   path:"events",
       //   element:<Events/>
-
       // },
       {
         path:"team",

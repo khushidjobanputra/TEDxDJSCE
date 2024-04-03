@@ -3,6 +3,7 @@ import React, { Suspense, useEffect, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Reflector, Text, useTexture, useGLTF } from "@react-three/drei";
 import bannerImg from "../assets/Home-images/bannerImg.webp";
+import demo1 from "../assets/Home-images/demo1.png";
 import Speaker from "../Components/Home/Speaker";
 import { info } from "../Components/Home/constant";
 import mobileBanner from "../assets/Home-images/mobileBanner.jpg";
@@ -17,7 +18,7 @@ export default function Home() {
         //   backgroundImage: `url(${bannerImg})`,
         // }}
       >
-        <img className="w-full hidden lg:block" src={bannerImg} alt="" />
+        <img className="w-full hidden lg:block" src={demo1} alt="" style={{height: '80vh', width: '100vw'}} />
         <img className="w-full block lg:hidden" src={mobileBanner} alt="" />
       </div>
 
