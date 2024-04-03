@@ -21,7 +21,7 @@ export default function Home() {
         <img className="w-full block lg:hidden" src={mobileBanner} alt="" />
       </div>
 
-      <div className="mt-17 h-screen">
+      {/* <div className="mt-17 h-screen">
         <Canvas
           concurrent
           gl={{ alpha: false }}
@@ -46,11 +46,11 @@ export default function Home() {
             <Intro />
           </Suspense>
         </Canvas>
-      </div>
+      </div> */}
 
       {/* bg-yellow-400 */}
       <div id="speaker-section" className="">
-        <h1 className="text-white text-5xl text-center">Our Speakers</h1>
+        <h1 className="text-white text-5xl text-center mt-10">Our Speakers</h1>
         {/* bg-red-600 */}
         <div id="bottom-sec" className=" w-[100vw]">
           {info.map((data, index) => (

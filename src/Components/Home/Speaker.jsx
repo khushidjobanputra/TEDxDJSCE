@@ -16,10 +16,10 @@ function Speaker({ name, content, index }) {
       </div>
       {/* bg-blue-800 */}
       <div id="content" className=" w-full md:w-[55%] md:h-full ">
-        <h1 className="text-center text-[10vw] md:text-[3.1vw] font-normal">
+        <h1 className="text-center text-[10vw] md:text-[3.1vw] font-normal text-white">
           {name}
         </h1>
-        <p className="font-semibold text-[5vw] md:text-[1.5vw]">{content}</p>
+        <p className="font-semibold text-[5vw] md:text-[1.5vw] text-white">{content}</p>
       </div>
     </div>
   );
