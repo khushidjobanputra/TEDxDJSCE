@@ -9,6 +9,7 @@ import Collaborate from './pages/Collaborate.jsx'
 import Home from './Home/Home.jsx'
 import Teams from './pages/Teams.jsx'
 import Events from './pages/events.jsx'
+import Events2 from './pages/Events2.jsx'
 
 const router = createBrowserRouter([
   {
@@ -30,7 +31,7 @@ const router = createBrowserRouter([
       },
       {
         path:"events",
-        element:<Events/>
+        element:<Events2/>
       },
       {
         path:"team",
