@@ -1,28 +1,32 @@
+//speaker.jsx
 import React from "react";
-import speaker1nm from "../../assets/Home-images/speaker1nm.webp";
 
-function Speaker({ name, content, index }) {
+function Speaker({ name, content, imageSrc, index }) {
+  // Log the value of imageSrc
+  console.log("Image Source:", imageSrc);
+
   return (
-    // bg-purple-700
     <div className="mt-[3vw] w-[80%] ml-[10%] lg:h-[65vh] pt-2 pb-2 md:p-2 flex flex-col md:flex-row md:gap-10 items-center">
-      {/* bg-yellow-700 */}
       <div
         id="image"
-        className={` w-full md:w-[35%]  md:h-full ${
-          index % 2 != 0 ? "md:order-2" : ""
+        className={`w-full md:w-[35%]  md:h-full ${
+          index % 2 !== 0 ? "md:order-2" : ""
         }`}
       >
-        <img src={speaker1nm} className={`w-full md:h-full `} alt="" />
+        <img src={imageSrc} className="w-full h-full" alt={name} />
       </div>
-      {/* bg-blue-800 */}
-      <div id="content" className=" w-full md:w-[55%] md:h-full ">
-        <h1 className="text-center text-[10vw] md:text-[3.1vw] font-normal text-white">
+      <div id="content" className="w-full md:w-[55%] md:h-full">
+        <h1 className="text-center font-sans font-black text-[10vw] md:text-[3.1vw]  text-white">
           {name}
         </h1>
-        <p className="font-semibold text-[5vw] md:text-[1.5vw] text-white">{content}</p>
+        <p className="font-semibold font-mono text-[5vw] md:text-[1.5vw] text-white">
+          {content}
+        </p>
       </div>
     </div>
   );
 }
 
 export default Speaker;
+
+

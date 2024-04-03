@@ -10,6 +10,7 @@ import mobileBanner from "../assets/Home-images/mobileBanner.jpg";
 
 export default function Home() {
   return (
+<<<<<<< HEAD
     <>
       <div
         id="banner"
@@ -21,6 +22,22 @@ export default function Home() {
         <img className="w-full hidden lg:block" src={demo1} alt="" style={{height: '80vh', width: '100vw'}} />
         <img className="w-full block lg:hidden" src={mobileBanner} alt="" />
       </div>
+=======
+    <div className='mt-17 sm:h-[25rem]'>
+    <Canvas concurrent gl={{ alpha: false }} pixelRatio={[1, 1.5]} camera={{ position: [0, 3, 100], fov: 15 }}>
+      <color attach="background" args={['black']} />
+      <fog attach="fog" args={['black', 15, 20]} />
+      <Suspense fallback={null}>
+        <group position={[0, -3, 0]}>
+          <Carla rotation={[0, Math.PI - 0.4, 0]} position={[-1.2, 1, 0.6]} scale={[0.26, 0.26, 0.26]} />
+          <VideoText position={[0, 2.8, -2]}  />
+          <Ground />
+        </group>
+        <ambientLight intensity={0.5} />
+        <spotLight position={[0, 10, 0]} intensity={0.3} />
+        <directionalLight position={[-50, 0, -40]} intensity={0.7} />
+        <Intro />
+>>>>>>> ed611db30b9c85919df66ddb566c13ed1d7e6626
 
       {/* <div className="mt-17 h-screen">
         <Canvas
@@ -58,6 +75,7 @@ export default function Home() {
             <Speaker
               key={index}
               name={data.name}
+              imageSrc={data.imageSrc}
               content={data.content}
               index={index}
             />
