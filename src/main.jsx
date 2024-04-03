@@ -7,6 +7,8 @@ import Layout from './Layout/Layout.jsx'
 import About from './pages/About.jsx'
 import Collaborate from './pages/Collaborate.jsx'
 import Home from './Home/Home.jsx'
+import Events from './pages/events.jsx'
+import Gallery from './Components/Gallery.jsx'
 
 const router = createBrowserRouter([
   {
@@ -25,6 +27,14 @@ const router = createBrowserRouter([
       {
         path:"collaborate",
         element:<Collaborate/>
+      },
+      {
+        path:"events",
+        element:<Events />
+      },
+      {
+        path:"gallery",
+        element:<Gallery />
       },
       // {
       //   path:"events",
