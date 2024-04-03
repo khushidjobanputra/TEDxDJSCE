@@ -67,6 +67,19 @@ function NavList() {
         as="li"
         variant="small"
         color="blue-gray"
+        className="p-1 font-medium"
+      >
+        <a
+          href="#"
+          className="flex items-center hover:text-red-500 transition-colors"
+        >
+          <Link to="/events">Events</Link>
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
         className="p-1 font-medium px-2 bg-red-500 hover:bg-white transition-colors rounded-lg"
       >
         <a

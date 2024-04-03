@@ -10,7 +10,6 @@ import mobileBanner from "../assets/Home-images/mobileBanner.jpg";
 
 export default function Home() {
   return (
-<<<<<<< HEAD
     <>
       <div
         id="banner"
@@ -22,8 +21,7 @@ export default function Home() {
         <img className="w-full hidden lg:block" src={demo1} alt="" style={{height: '80vh', width: '100vw'}} />
         <img className="w-full block lg:hidden" src={mobileBanner} alt="" />
       </div>
-=======
-    <div className='mt-17 sm:h-[25rem]'>
+    {/* <div className='mt-17 sm:h-[25rem]'>
     <Canvas concurrent gl={{ alpha: false }} pixelRatio={[1, 1.5]} camera={{ position: [0, 3, 100], fov: 15 }}>
       <color attach="background" args={['black']} />
       <fog attach="fog" args={['black', 15, 20]} />
@@ -36,10 +34,9 @@ export default function Home() {
         <ambientLight intensity={0.5} />
         <spotLight position={[0, 10, 0]} intensity={0.3} />
         <directionalLight position={[-50, 0, -40]} intensity={0.7} />
-        <Intro />
->>>>>>> ed611db30b9c85919df66ddb566c13ed1d7e6626
+        <Intro /> */}
 
-      {/* <div className="mt-17 h-screen">
+      <div className="mt-17 h-screen">
         <Canvas
           concurrent
           gl={{ alpha: false }}
@@ -64,7 +61,7 @@ export default function Home() {
             <Intro />
           </Suspense>
         </Canvas>
-      </div> */}
+      </div>
 
       {/* bg-yellow-400 */}
       <div id="speaker-section" className="">
@@ -106,7 +103,7 @@ function VideoText(props) {
   useEffect(() => void video.play(), [video]);
   return (
     <Text font="/Inter-Bold.woff" fontSize={3} letterSpacing={-0.06} {...props}>
-      Tedx
+      TEDx
       <meshBasicMaterial toneMapped={false}>
         <videoTexture
           attach="map"

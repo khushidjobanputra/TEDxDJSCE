@@ -28,10 +28,10 @@ const router = createBrowserRouter([
         path:"collaborate",
         element:<Collaborate/>
       },
-      // {
-      //   path:"events",
-      //   element:<Events/>
-      // },
+      {
+        path:"events",
+        element:<Events/>
+      },
       {
         path:"team",
         element:<Teams/>
