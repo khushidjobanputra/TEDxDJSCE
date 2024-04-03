@@ -1,5 +1,6 @@
 import { useRef } from "react";
-import image1 from "../assets/Events/image1.jpg";
+import image8 from "../assets/Events/image8.png";
+// import image1 from "../assets/Events/image1.jpg";
 import image2 from "../assets/Events/image2.jpg";
 import image3 from "../assets/Events/image3.jpg";
 import image4 from "../assets/Events/image4.png";
@@ -7,6 +8,7 @@ import image5 from "../assets/Events/image5.jpg";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 // import "../styles/carousel.css";
+import {motion} from 'framer-motion'
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
@@ -16,7 +18,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import AccordionComponent from "./Events/Accordion";
 
-const images = [image1, image2, image3, image4, image5];
+const images = [image8, image2, image3, image4, image5];
 
 const Gallery = () => {
   return (
@@ -26,9 +28,16 @@ const Gallery = () => {
           id="gallery"
           className="relative h-screen md:w-[70vw] md:ml-[15vw] flex flex-col items-center justify-center"
         >
-          <h1 className="text-center md:text-[5vw] text-[#fff] m-2 block">
+          <motion.div 
+          initial={{ x: "-100vw" }} 
+          animate={{ x: 0 }} 
+          transition={{ type: "spring", stiffness: 40 }} 
+          className='text-red-500 font-bold text-5xl flex md:mr-[65vw] justify-start mx-32 items-center'>
+            EVENT <span className=' text-white'>x</span>
+          </motion.div>
+          {/* <h1 className="text-center md:text-[5vw] text-[#fff] m-2 block">
             Events
-          </h1>
+          </h1> */}
           <Swiper
             modules={[EffectCoverflow, Navigation, Pagination]}
             navigation={{
@@ -49,7 +58,7 @@ const Gallery = () => {
               modifier: 1,
               slideShadows: true,
             }}
-            className=" h-[60vh] md:h-[500px] w-[200vw]  md:w-[99%] mt-20 rounded-xl"
+            className=" h-[60vh] md:h-[500px] w-[200vw] md:w-[99%] mt-20 rounded-xl"
             breakpoints={{
               // when window width is >= 768px
               768: {
@@ -74,9 +83,7 @@ const Gallery = () => {
             </div>
           </Swiper>
         </div>
-
-<AccordionComponent />
-      
+{/* <AccordionComponent /> */}
     </>
   );
 };
