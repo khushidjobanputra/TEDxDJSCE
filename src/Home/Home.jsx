@@ -57,6 +57,7 @@ export default function Home() {
             <Speaker
               key={index}
               name={data.name}
+              imageSrc={data.imageSrc}
               content={data.content}
               index={index}
             />
